@@ -1,8 +1,17 @@
+variable "subnet_id" {
+  default = "subnet-0a4db655a5a77ebfb"
+}
+
+variable "vpc_id" {
+  default = "vpc-0a306a066bdadc5db"
+}
+
+
 variable "instance_type" {
   default = "t2.micro"
 }
 variable "key_name" {
-  default = "jenkins_key4"
+  default = "belgium2"
 }
 variable "ami_id" {
   default = "ami-0ce71448843cb18a1"
@@ -17,7 +26,7 @@ variable "managed_by" {
 }
 
 variable "app_name" {
-  default = "JenkinsSetup"
+  default = "AppServerBoxSetup"
 }
 
 variable "environment" {
