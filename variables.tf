@@ -1,4 +1,5 @@
 variable "subnet_id" {
+<<<<<<< HEAD:variables.tf
   default = "subnet-0a4db655a5a77ebfb"
 }
 
@@ -7,6 +8,17 @@ variable "vpc_id" {
 }
 
 
+=======
+  default = "subnet-00ac8967c7a8e25ed"
+}
+variable "vpc_id" {
+  default = "vpc-0767187dbc914d321"
+}
+
+
+
+
+>>>>>>> ad867a317903c3c4f23d59d4287dee35f2eafec3:variables.tf
 variable "instance_type" {
   default = "t2.micro"
 }
