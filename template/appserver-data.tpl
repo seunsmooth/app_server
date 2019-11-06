@@ -1,4 +1,4 @@
-#!/bin/bash
+git #!/bin/bash
 set -e
 
 #do an update
