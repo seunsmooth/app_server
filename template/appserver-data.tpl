@@ -1,4 +1,4 @@
-git #!/bin/bash
+#!/bin/bash
 set -e
 
 #do an update
@@ -21,4 +21,3 @@ sudo yum install nodejs -y
 
 curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
 sudo yum install yarn -y
-
