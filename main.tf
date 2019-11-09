@@ -15,7 +15,7 @@ resource "aws_instance" "AppserverBox" {
  
   key_name                    = "${var.key_name}"
  
-  user_data                   = "${data.template_file.appserver_data.rendered}"
+ # user_data                   = "${data.template_file.appserver_data.rendered}"
  
   #subnet_id                   = "${aws_subnet.public[0]}"
   subnet_id              = "${var.subnet_id}"
@@ -30,8 +30,8 @@ resource "aws_instance" "AppserverBox" {
 resource "aws_security_group" "apps_allow" {
   name        = "allow_all"
   description = "Allow all inbound traffic"
-  vpc_id      = "$(var.vpc_id}"
-
+  #vpc_id      = "$(var.vpc_id}"
+  vpc_id       = "vpc-0a306a066bdadc5db"
 
   ingress {
 
