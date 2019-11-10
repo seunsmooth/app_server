@@ -15,7 +15,7 @@ resource "aws_instance" "AppserverBox" {
  
   key_name                    = "${var.key_name}"
  
- # user_data                   = "${data.template_file.appserver_data.rendered}"
+  user_data                   = "${data.template_file.appserver_data.rendered}"
  
   #subnet_id                   = "${aws_subnet.public[0]}"
   subnet_id              = "${var.subnet_id}"
