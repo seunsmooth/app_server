@@ -2,8 +2,8 @@ pipeline {
   agent any
   stages {
     stage ("Perfomr terraform initialization") {
-      steps {
-      sh 'terraform init'
+            steps {
+      sh 'cd app_server && terraform init'
     }
   }
   stage ("apply Terraform") {
